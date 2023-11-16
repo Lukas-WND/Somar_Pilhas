@@ -83,7 +83,7 @@ void inserirNumero(Pilha **pilha, int num){
 
 Pilha *somar(Pilha **num1, Pilha **num2) {
     int carry = 0;
-    Pilha *resultado = new Pilha();
+    Pilha *resultado = nullptr;
 
     while (!isEmpty(*num1) || !isEmpty(*num2)) {
         int soma = carry;
